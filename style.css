@@ -123,3 +123,61 @@ section.header{
     height: 4px;
     background: orange;
 }
+
+.open-btn,
+.close-btn {
+    border: none;
+    background: #47a386;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.35);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.modal{
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0,2px,4px rgb(0,0,0,0.25);
+    padding: 30px 50px;
+    width: 500px;
+}
+.modal h1 , .modal p{
+    margin-bottom: 17px;
+    color: #333;
+}
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.me{
+    width: 100%;
+    max-width: 100px;
+    border-radius: 75%;
+    margin: 1rem;
+}
+.open-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.nav .actuve{
+    background-color: #fff;
+}
